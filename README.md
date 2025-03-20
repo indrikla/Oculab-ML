@@ -18,9 +18,9 @@ Follow these steps to set up the project and run the Flask-RESTful API.
 First, clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/mrasyadc/OculabImageStitchingPredictionBackend
+git clone https://github.com/indrikla/Oculab-ML
 
-cd OculabImageStitchingPredictionBackend
+cd Oculab-ML
 ```
 
 ### Step 2: Create a Conda Environment and Install Dependencies
@@ -104,7 +104,7 @@ License
 This project is licensed under the MIT License.
 
 
-This README provides all the steps necessary to create a Conda environment, install Flask and Flask-RESTful, and run your API. Let Rasyad know if you need any further assistance!
+This README provides all the steps necessary to create a Conda environment, install Flask and Flask-RESTful, and run your API. Let Risa know if you need any further assistance!
 
 
 
