@@ -1,0 +1,41 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment and package manager files
+.env
+*.env
+*.conda
+*.envrc
+
+# Ignore Conda and pip packages
+/venv
+/env
+*.egg-info
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Docker-specific files
+Dockerfile
+docker-compose.yml
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore local logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore Jupyter notebooks checkpoints if used
+.ipynb_checkpoints
+
+# Ignore image folder
+images/
+
+# ignore .idea folder
+.idea/

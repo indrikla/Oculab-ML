@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  oculab-ml:
+    build: 
+      context: .
+      dockerfile: Dockerfile   # Use the Dockerfile in the same directory
+    container_name: oculab-ml
+    ports:
+      - "5000:5000"  # Map host port 5001 to container port 5000
+    environment:
+      - BE_ENDPOINT_URL=${BE_ENDPOINT_URL}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+      - AWS_BUCKET=${AWS_BUCKET}
+      - AWS_USE_PATH_STYLE_ENDPOINT=${AWS_USE_PATH_STYLE_ENDPOINT}
+      - AWS_ENDPOINT_URL=${AWS_ENDPOINT_URL}
+    restart: always
+
+  # ngrok:
+  #   image: wernight/ngrok:latest
+  #   container_name: ngrok
+  #   platform: linux/amd64  # Specify amd64 platform for compatibility
+  #   depends_on:
+  #     - oculab-ml
+  #   environment:
+  #     - NGROK_PROTOCOL=http
+  #     - NGROK_PORT=oculab-ml:5000  # Forward to backend’s internal port 5000
+  #     - NGROK_AUTH=${NGROK_AUTH}  # Your Ngrok auth token from .env
+  #   restart: always

@@ -1,0 +1,10 @@
+Flask==3.0.3
+Flask_RESTful==0.3.10
+Pillow==10.4.0
+ultralytics==8.3.9
+scikit-image==0.24.0
+opencv-python==4.10.0.84
+pymongo==4.10.1
+aiohttp==3.10.10
+boto3==1.35.43
+python-dotenv==1.0.1
